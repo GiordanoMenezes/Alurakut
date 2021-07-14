@@ -34,8 +34,8 @@ export default function Home() {
             <ul>
               {myfriends.map((fr) => {
                 return (
-                  <li>
-                    <a href={`/users/${fr}`} key={fr}>
+                  <li key={fr}>
+                    <a href={`/users/${fr}`}>
                       <img src={`https://github.com/${fr}.png`} />
                       <span>{fr}</span>
                     </a>
